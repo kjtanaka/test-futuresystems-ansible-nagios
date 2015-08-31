@@ -1,4 +1,8 @@
 # Makefile for test-futuresystems-ansible-nagios
 
-install:
-	bash shell/install.sh
+help:
+	@echo "Please use \`make <target>' where <target> is one of"
+	@echo "  roles       to install/udate roles "
+
+roles:
+	bash shell/roles.sh
