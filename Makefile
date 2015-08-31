@@ -2,7 +2,7 @@
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  roles       to install/udate roles "
+	@echo "  install-roles       to install/udate roles "
 
-roles:
-	bash shell/roles.sh
+install-roles:
+	bash shell/install-roles.sh
