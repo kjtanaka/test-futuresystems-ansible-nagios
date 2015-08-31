@@ -5,4 +5,4 @@ help:
 	@echo "  install-roles       to install/udate roles "
 
 install-roles:
-	bash shell/install-roles.sh
+	bash scripts/install-roles.sh

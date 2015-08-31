@@ -1,0 +1,9 @@
+---
+
+- hosts: monitor
+  roles:
+
+    - role: nagios_server
+
+      nagios_server_web_admin_password: "{{ secret.nagios.web_admin_password }}"
+      nagios_server_address: "{{ global.iface.internal.ipv4.address }}"
