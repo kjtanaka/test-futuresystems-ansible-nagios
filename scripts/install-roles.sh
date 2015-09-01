@@ -2,7 +2,7 @@
 #
 # shell/install-roles.sh
 #
-# NOTE: Don't execute this directory. Use make instead.
+# NOTE: Don't execute this script directly. Use `make install-roles` instead.
 
 CWD=$(pwd)
 
