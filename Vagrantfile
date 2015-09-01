@@ -7,6 +7,7 @@ Vagrant.configure(2) do |config|
     monitor.vm.box = "chef/ubuntu-14.04"
     monitor.vm.hostname = "monitor"
     monitor.vm.network :forwarded_port, guest: 22, host: 2231, id: "ssh", auto_correct: true
+    monitor.vm.network :forwarded_port, guest: 80, host: 8000, id: "http", auto_correct: true
     monitor.vm.network "private_network", ip: "192.168.11.101", virtualbox__intnet: "int1"
   end
 

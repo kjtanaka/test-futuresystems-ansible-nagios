@@ -1,4 +1,8 @@
 ---
 
-- include: plays/nagios_server.yml
-#- include: plays/nagios_client.yml
+- hosts: monitor
+  sudo: yes
+  roles:
+    - role: nagios-server
+      nagios_server_web_admin_password: EasyPassword0123
+      nagios_server_address: 192.168.11.101
